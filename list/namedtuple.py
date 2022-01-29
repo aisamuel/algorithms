@@ -14,7 +14,7 @@ for emp in map(EmployeeRecord._make, csv_reader):
 
 import sqlite3
 conn = sqlite3.connect('commanydata.db')
-# con = sqlite3.connect(":memory:")
+
 cur = conn.cursor()
 try:
     cur.execute("create table employees (name, age, title, department, paygrade)")
@@ -27,3 +27,5 @@ conn.commit()
 # And this is the named style:
 for row in cur.execute('SELECT * FROM employees ORDER BY age'):
     print(row)
+
+conn.close()

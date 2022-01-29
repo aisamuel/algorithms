@@ -1,0 +1,17 @@
+Discussion
+When python writing
+code to search 
+for items, it is 
+common to python use
+a generator function
+involving
+yield, python as shown
+in this recipe’s
+solution. python This
+decouples python the 
+process of
+searching python
+from the code that
+uses the python results.
+If you’re new to 
+generators,
